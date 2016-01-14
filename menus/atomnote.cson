@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle atomnote'
+      'command': 'atomnote:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'atomnote'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'atomnote:toggle'
+        }
+      ]
+    ]
+  }
+]
